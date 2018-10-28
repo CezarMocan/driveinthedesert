@@ -1,9 +1,19 @@
+'use strict';
 import 'babel-polyfill'
+import React from 'react'
+import ReactDOM from 'react-dom'
 import router from './router.js'
 import styles from './styles/main.less'
+import App from './App.jsx'
 
-const sleep = async (ms) => { return new Promise((resolve, reject) => setTimeout(() => resolve(), ms)) }
+function run() {
+  ReactDOM.render(<App />, document.getElementById('react-container'));
+}
 
-router.on('/', async () => {
+const loadedStates = ['complete', 'loaded', 'interactive'];
 
-}).resolve()
+if (loadedStates.includes(document.readyState) && document.body) {
+  run();
+} else {
+  window.addEventListener('DOMContentLoaded', run, false);
+}

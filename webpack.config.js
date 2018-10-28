@@ -22,7 +22,7 @@ module.exports = {
   },
   resolve: {
     extensions: [
-      '.js'
+      '.js',
     ]
   },
   module: {
@@ -30,6 +30,11 @@ module.exports = {
       {
         loader: 'babel-loader',
         test: /\.js$/
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader'
       },
       { 
         test: /\.less$/,

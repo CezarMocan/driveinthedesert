@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "NODE_ENV=development webpack-dev-server",
     "build": "npm run clean && webpack -p",
     "clean": "rm -rf dist",
     "deploy_old": "git add dist && git commit -a -m 'Deployed!' && git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
@@ -12,10 +12,13 @@
     "deploy": "npm run build && npm run sync:s3 && npm run sync:cloudfront"
   },
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
     "less": "^3.8.1",
     "navigo": "^7.1.2",
     "pify": "^3.0.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "style-loader": "^0.23.1"
   },
   "devDependencies": {
