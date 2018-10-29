@@ -1,6 +1,12 @@
+@font-face {
+  font-family: Akkurat-Mono;
+  src: url(/assets/Akkurat-Mono.ttf);
+}
+
 @blue: rgba(45, 48, 222, 255);
+@dark-blue: rgba(47, 47, 127, 255);
 @yellow: rgba(255, 248, 119, 255);
-@light-yellow: rgba(255, 255, 230, 255);
+@light-yellow: rgba(255, 255, 230, 0.4);
 
 .main-container {
   position: absolute;
@@ -10,4 +16,68 @@
   bottom: 0;
   background-color: @light-yellow;
   overflow: none;
+}
+
+.blobs {
+  fill: @yellow;
+  stroke: @dark-blue;
+  stroke-width: 0.2px;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+.logo {
+  fill: @blue;
+  stroke: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 100px;  
+}
+.path {
+  fill: none;
+  stroke: @blue;
+  stroke-width: 0px;
+  position: absolute;
+
+  &.path-1 {
+    right: 10vw;
+    top: 115px;
+    width: 30vw;
+  }
+  &.path-2 {
+    right: 8vw;
+    top: 225px;
+    width: 28vw;
+    .type-on-path {
+      font-size: 28pt;
+    }
+  }
+  &.path-3 {
+    right: 15vw;
+    top: 375px;
+    width: 35vw;
+    transform: rotateZ(30deg);
+  }
+  &.path-4 {
+    right: 10vw;
+    top: 115px;
+    width: 30vw;
+  }
+  &.path-5 {
+    right: 10vw;
+    top: 115px;
+    width: 30vw;
+  }
+}
+
+.type-on-path {
+  fill: @blue;
+  stroke: none;
+  font-size: 34pt;
+  font-family: "Akkurat-Mono", courier;
+  &:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+  }
 }

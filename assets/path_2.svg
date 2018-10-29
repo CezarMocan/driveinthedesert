@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 710.11 282.09"><defs><style>.cls-1,.cls-3{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{stroke:#2d30de;stroke-linecap:square;}</style><clipPath id="clip-path" transform="translate(-16.19 -16.19)"><rect class="cls-1" width="742.49" height="314.46"/></clipPath></defs><title>path_2_1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2">
+<path class="cls-3" d="M16.89,297.57s95.54-88,228.28-123.69,82.11,74.69,312.7,33.74S714.5,16.86,714.5,16.86" transform="translate(-16.19 -16.19)"/>
+<text x="150" class="type-on-path">
+    <animate attributeType="XML" attributeName="x" from="-720" to="950" dur="10s" repeatCount="indefinite"/>
+    <textPath xlink:href="#curve">
+    american artist*hamden, ct
+  </textPath>
+</text>
+
+</g></g></g></svg>
