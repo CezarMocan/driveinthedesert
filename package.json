@@ -9,7 +9,7 @@
     "deploy_old": "git add dist && git commit -a -m 'Deployed!' && git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
     "sync:s3": "AWS_DEFAULT_PROFILE=cezar aws s3 sync dist s3://driveinthedesert.com && AWS_DEFAULT_PROFILE=cezar aws s3 sync dist s3://www.driveinthedesert.com",
     "sync:cloudfront": "AWS_DEFAULT_PROFILE=cezar aws cloudfront create-invalidation --distribution-id E3IBDZTTC6CYE1 --paths \"/*\"",
-    "deploy": "npm run build && npm run sync:s3 && npm run sync:cloudfront"
+    "deploy": "npm run build && npm run sync:s3"
   },
   "dependencies": {
     "babel-preset-react": "^6.24.1",
