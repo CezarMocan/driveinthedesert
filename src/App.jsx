@@ -15,7 +15,8 @@ export default class App extends React.Component {
     super(props)
     this.state = {
       windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight
+      windowHeight: window.innerHeight,
+      currentSelection: 0
     }
     window.addEventListener('resize', this.onResize.bind(this))
   }
@@ -27,9 +28,18 @@ export default class App extends React.Component {
     })
   }
 
+  componentDidMount() {
+    $("#text1").click(() => this.setState({ currentSelection: 0}))
+    $("#text2").click(() => this.setState({ currentSelection: 1}))
+    $("#text3").click(() => this.setState({ currentSelection: 2}))
+    $("#text4").click(() => this.setState({ currentSelection: 3}))
+    $("#text5").click(() => this.setState({ currentSelection: 4}))
+  }
+
   render() {
-    const { windowWidth, windowHeight } = this.state
+    const { windowWidth, windowHeight, currentSelection } = this.state
     const { TEXTS } = Content
+    const { name, link, text } = TEXTS[currentSelection]
     return (
       <div className="main-container">      
         <Blobs className="blobs" width={windowWidth + 30}/>
@@ -39,7 +49,7 @@ export default class App extends React.Component {
         <Path3 className="path path-3"/>
         <Path4 className="path path-4"/>
         <Path5 className="path path-5"/>
-        <Description text={TEXTS[0]}/>
+        <Description text={text} name={name} url={link} />
       </div>
     )
   }

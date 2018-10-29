@@ -8,12 +8,18 @@ export default class DescriptionComponent extends React.Component {
   }
 
   render() {
-    const { text } = this.props
+    const { text, name, url } = this.props
     return (
       <div className="description-container">
         <DescriptionBlob className="description-blob"/>
-        <div className="description-text">
-          {text}
+        <div className="description-text-container">
+          <div className="description-text-name">
+            {name}<br/>
+            <a className="description-link" href={url} target="__blank">{url}</a>
+          </div>
+          <div className="description-text-content">
+            {text}
+          </div>
         </div>
       </div>
     )

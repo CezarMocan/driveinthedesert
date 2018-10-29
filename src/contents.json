@@ -1,10 +1,34 @@
 {
   "TEXTS": {
-    "0": "A collection of functional ceramics and homeware rooted in folk craft and modern design. Independent, woman owned, and based in San Francisco. Enriched with native Joshua tree botanicals, this desert-inspired mist refreshes, balances skin’s ph, and soothes. Aloe vera and wild-harvested yucca hydrate and calm the skin while white sage purifies.",
-    "1": "",
-    "2": "",
-    "3": "",
-    "4": "",
-    "5": ""
+    "0": {
+      "name": "Carina Rose Hardy",
+      "link": "www.instagram.com/carina",
+      "text": "A collection of functional ceramics and homeware rooted in folk craft and modern design. Independent, woman owned, and based in San Francisco. Enriched with native Joshua tree botanicals, this desert-inspired mist refreshes, balances skin’s ph, and soothes. Aloe vera and wild-harvested yucca hydrate and calm the skin while white sage purifies."
+    },
+    "1": {
+      "name": "American Artist",
+      "link": "www.instagram.com/american",
+      "text": "Independent, woman owned, and based in San Francisco. Enriched with native Joshua tree botanicals, this desert-inspired mist refreshes, balances skin’s ph, and soothes. Aloe vera and wild-harvested yucca hydrate and calm the skin while white sage purifies."
+    },
+    "3": {
+      "name": "Deep Gnome",
+      "link": "www.instagram.com/deep.gnome",
+      "text": "Enriched with native Joshua tree botanicals, this desert-inspired mist refreshes, balances skin’s ph, and soothes. Aloe vera and wild-harvested yucca hydrate and calm the skin while white sage purifies."
+    },
+    "2": {
+      "name": "Gravel & Gold",
+      "link": "www.instagram.com/gravel",
+      "text": "A collection of functional ceramics and homeware rooted in folk craft and modern design. Independent, woman owned, and based in San Francisco. Enriched with native Joshua tree botanicals, this desert-inspired mist refreshes, balances skin’s ph, and soothes. Aloe vera and wild-harvested yucca hydrate and calm the skin while white sage purifies."
+    },
+    "4": {
+      "name": "Portico Quartet",
+      "link": "www.instagram.com/portico",
+      "text": "Independent, woman owned, and based in San Francisco. Enriched with native Joshua tree botanicals, this desert-inspired mist refreshes, balances skin’s ph, and soothes. Aloe vera and wild-harvested yucca hydrate and calm the skin while white sage purifies."
+    },
+    "5": {
+      "name": "Deep Gnome",
+      "link": "www.instagram.com/deep.gnome",
+      "text": "Enriched with native Joshua tree botanicals, this desert-inspired mist refreshes, balances skin’s ph, and soothes. Aloe vera and wild-harvested yucca hydrate and calm the skin while white sage purifies."
+    }
   }
 }

@@ -59,32 +59,33 @@
 
   &.path-1 {
     right: 15vw;
-    top: 5vh;
-    width: 30vw;
+    top: -12vh;
+    width: 70vw;
+    transform: rotateZ(5deg);
   }
   &.path-2 {
     right: 13vw;
-    top: 20vh;
-    width: 28vw;
+    top: 22vh;
+    width: 68vw;
     .type-on-path {
       font-size: 28pt;
     }
   }
   &.path-3 {
-    right: 25vw;
-    top: 43vh;
-    width: 35vw;
-    transform: rotateZ(7deg);
+    left: -5vw;
+    top: -5vh;
+    width: 55vw;
+    transform: rotateZ(-35deg);
   }
   &.path-4 {
     right: 0;
     top: 48vh;
-    width: 28vw;
+    width: 70vw;
   }
   &.path-5 {
-    right: 18vw;
+    right: -3vw;
     top: 84vh;
-    width: 36vw;
+    width: 66vw;
   }
 }
 
@@ -112,12 +113,21 @@
     left: -15%;
     bottom: -50px;
   }
-  .description-text {
+  .description-text-container {
     position: absolute;
-    left: 15px;
-    bottom: 15px;
+    left: 0;
+    bottom: 0;
     color: @blue;
     font-family: "Adieu-Light", sans-serif;    
     max-width: 500px;
+    height: 270px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.3;
+    a {
+      color: @blue;
+    }
   }
 }
