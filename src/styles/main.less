@@ -3,6 +3,11 @@
   src: url(/assets/Akkurat-Mono.ttf);
 }
 
+@font-face {
+  font-family: Adieu-Light;
+  src: url(/assets/Adieu-Light.ttf);
+}
+
 @blue: rgba(45, 48, 222, 255);
 @dark-blue: rgba(47, 47, 127, 255);
 @yellow: rgba(255, 248, 119, 255);
@@ -21,18 +26,30 @@
 .blobs {
   fill: @yellow;
   stroke: @dark-blue;
-  stroke-width: 0.2px;
+  stroke-width: 0;
   margin-left: -15px;
   margin-top: -15px;
 }
 
-.logo {
-  fill: @blue;
-  stroke: none;
+.logo-container {
   position: fixed;
-  top: 10px;
-  left: 10px;
-  width: 100px;  
+  top: 0;
+  left: 0;
+  .logo {
+    fill: @blue;
+    stroke: none;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 105px;
+  }
+  .logo-blob {
+    position: absolute;
+    top: -35px;
+    left: -45px;
+    width: 375px;
+    fill: @yellow;
+  }
 }
 .path {
   fill: none;
@@ -41,33 +58,33 @@
   position: absolute;
 
   &.path-1 {
-    right: 10vw;
-    top: 115px;
+    right: 15vw;
+    top: 5vh;
     width: 30vw;
   }
   &.path-2 {
-    right: 8vw;
-    top: 225px;
+    right: 13vw;
+    top: 20vh;
     width: 28vw;
     .type-on-path {
       font-size: 28pt;
     }
   }
   &.path-3 {
-    right: 15vw;
-    top: 375px;
+    right: 25vw;
+    top: 43vh;
     width: 35vw;
-    transform: rotateZ(30deg);
+    transform: rotateZ(7deg);
   }
   &.path-4 {
-    right: 10vw;
-    top: 115px;
-    width: 30vw;
+    right: 0;
+    top: 48vh;
+    width: 28vw;
   }
   &.path-5 {
-    right: 10vw;
-    top: 115px;
-    width: 30vw;
+    right: 18vw;
+    top: 84vh;
+    width: 36vw;
   }
 }
 
@@ -79,5 +96,28 @@
   &:hover {
     text-decoration: line-through;
     cursor: pointer;
+  }
+}
+
+.description-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 700px;
+  height: 300px;
+  min-width: 200px;
+  .description-blob {
+    fill: @yellow;
+    position: absolute;
+    left: -15%;
+    bottom: -50px;
+  }
+  .description-text {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    color: @blue;
+    font-family: "Adieu-Light", sans-serif;    
+    max-width: 500px;
   }
 }
