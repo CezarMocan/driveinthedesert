@@ -3,7 +3,7 @@
 <text id="text4" x="150" class="type-on-path">
     <animate attributeType="XML" attributeName="x" from="-910" to="1050" dur="19.5s" repeatCount="indefinite"/>
     <textPath xlink:href="#curve4">
-    Raw Materials
+    *raw materials*
   </textPath>
 </text>
 </g></g></g></svg>

@@ -3,7 +3,7 @@
 <text id="text3" x="150" class="type-on-path">
     <animate attributeType="XML" attributeName="x" from="1250" to="-820" dur="22s" repeatCount="indefinite"/>
     <textPath xlink:href="#curve3">
-    Pure Colors
+    *pure colors*
   </textPath>
 </text>
 

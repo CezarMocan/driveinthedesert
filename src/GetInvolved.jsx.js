@@ -13,12 +13,12 @@ export default class GetInvolved extends React.Component {
         <DescriptionBlob className="description-blob"/>
         <div className="description-text-container">
           <div className="description-text-name">
-          We would love for you to be part of our journey! Here is how you can get involved: 
+          We would love for you to be part of our journey! If you are an artist or a maker, this is how you can get involved: 
           </div>
           <div className="description-text-content">
             1. collaborate with us in creating DITD product capsule; <br/>
             2. propose your products that best encapsulate the values and design principles we want to promote; <br/>
-            3. join our evening conversations and events and make new friends<br/>
+            3. join our evening conversations and events and make new friends.<br/>
             <br/>
             If you are interested in learning more, <a href="mailto:driveinthedesert@gmail.com">get in touch</a>! 
           </div>

@@ -3,7 +3,7 @@
 <text id="text2" x="150" class="type-on-path">
     <animate attributeType="XML" attributeName="x" from="950" to="-720" dur="18s" repeatCount="indefinite"/>
     <textPath xlink:href="#curve2">
-    Sustainable Production
+    *sustainable production*
   </textPath>
 </text>
 
