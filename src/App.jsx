@@ -94,6 +94,7 @@ export default class App extends React.Component {
         <Path10 className="path path-10"/>
 
         <Blobs className="blobs" width={windowWidth + 30}/>
+        <Blobs className="blobs" width={windowWidth + 30}/>
         <Blobs className="blobs" width={windowWidth + 30} style={{position: 'fixed', top: 0, left: 0}}/>
         
         <Logo/>
@@ -105,10 +106,10 @@ export default class App extends React.Component {
           <div className="menu-item">208 Bowery, NY</div>
           <div className="menu-item">Nov. 29—Dec. 2</div>
           <div className="menu-item">—</div>
-          <div className="menu-item" onClick={this.onAboutClick}>about</div>
-          <div className="menu-item" onClick={this.onPrinciplesClick}>principles</div>
-          <div className="menu-item" onClick={this.onProductsClick}>products</div>
-          <div className="menu-item" onClick={this.onGetInvolvedClick}>get involved</div>
+          <div className="menu-item link" onClick={this.onAboutClick}>about</div>
+          <div className="menu-item link" onClick={this.onPrinciplesClick}>principles</div>
+          <div className="menu-item link" onClick={this.onProductsClick}>products</div>
+          <div className="menu-item link" onClick={this.onGetInvolvedClick}>get involved</div>
         </div>
 
       </div>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1833.87 285.91"><defs><style>.cls-1,.cls-3{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{stroke:#2d30de;stroke-linecap:square;}</style><clipPath id="clip-path" transform="translate(0 0)"><rect class="cls-1" width="1833.88" height="285.91"/></clipPath></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2">
+<path id="curve6" class="cls-3" d="M.7,285.2S235.28-14.51,992.43,111.59,1791.4,82.4,1833.2.67" transform="translate(0 0)"/>
+<text id="text6" x="150" class="type-on-path">
+    <animate attributeType="XML" attributeName="x" from="-500" to="2810" dur="33s" repeatCount="indefinite"/>
+    <textPath xlink:href="#curve6">
+    *ceramics &amp; sculpture*
+  </textPath>
+</text>
+
+</g></g></g></svg>

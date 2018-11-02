@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 793.27 1410.06"><defs><style>.cls-1,.cls-3{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{stroke:#2d30de;stroke-linecap:square;}</style><clipPath id="clip-path" transform="translate(0)"><rect class="cls-1" width="793.27" height="1410.06"/></clipPath></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2">
+<path id="curve7" class="cls-3" d="M68.42,1409.38S-203.25,961.14,340.09,641,786,.62,786,.62" transform="translate(0)"/>
+<text id="text7" x="150" class="type-on-path">
+    <animate attributeType="XML" attributeName="x" from="3500" to="-300" dur="52s" repeatCount="indefinite"/>
+    <textPath xlink:href="#curve7">
+    *photography &amp; prints*
+  </textPath>
+</text>
+
+</g></g></g></svg>

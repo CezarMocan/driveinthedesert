@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1386.72 1332.97"><defs><style>.cls-1,.cls-3{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{stroke:#2d30de;stroke-linecap:square;}</style><clipPath id="clip-path" transform="translate(0 0)"><rect class="cls-1" width="1386.72" height="1332.97"/></clipPath></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2">
+<path id="curve8" class="cls-3" d="M1268.92.67c204.33,415.77,130.73,571.14-135.55,760.54s-670.55,52-670.55,52-790.49-283.44-304.17,519.05" transform="translate(0 0)"/>
+<text id="text8" x="150" class="type-on-path">
+    <animate attributeType="XML" attributeName="x" from="4000" to="0" dur="40.5s" repeatCount="indefinite"/>
+    <textPath xlink:href="#curve8">
+    *jewelry &amp; accessories*
+  </textPath>
+</text>
+
+</g></g></g></svg>

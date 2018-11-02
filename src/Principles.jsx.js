@@ -7,10 +7,11 @@ export default class Principles extends React.Component {
     super(props)
   }
 
+  // <DescriptionBlob className="description-blob"/>
+
   render() {
     return (
       <div className="description-container">
-        <DescriptionBlob className="description-blob"/>
         <div className="description-text-container">
           <div className="description-text-name">
           </div>
