@@ -8,6 +8,11 @@ import Path2 from '../assets/path_2.svg'
 import Path3 from '../assets/path_3.svg'
 import Path4 from '../assets/path_4.svg'
 import Path5 from '../assets/path_5.svg'
+import Path6 from '../assets/path_6.svg'
+import Path7 from '../assets/path_7.svg'
+import Path8 from '../assets/path_8.svg'
+import Path9 from '../assets/path_9.svg'
+import Path10 from '../assets/path_10.svg'
 import Content from './contents.json'
 import WhatIsDitd from './WhatIsDitd.jsx'
 import Principles from './Principles.jsx'
@@ -76,11 +81,17 @@ export default class App extends React.Component {
     return (
       <div className="main-container">      
         <Blobs className="blobs" width={windowWidth + 30}/>
+
         <Path1 className="path path-1"/>
         <Path2 className="path path-2"/>
         <Path3 className="path path-3"/>
         <Path4 className="path path-4"/>
         <Path5 className="path path-5"/>
+        <Path6 className="path path-6"/>
+        <Path7 className="path path-7"/>
+        <Path8 className="path path-8"/>
+        <Path9 className="path path-9"/>
+        <Path10 className="path path-10"/>
 
         <Blobs className="blobs" width={windowWidth + 30}/>
         <Blobs className="blobs" width={windowWidth + 30} style={{position: 'fixed', top: 0, left: 0}}/>
@@ -91,6 +102,9 @@ export default class App extends React.Component {
         { currentMenuSelection == MENU.PRODUCTS && <Products/> }
         { currentMenuSelection == MENU.GET_INVOLVED && <GetInvolved/> }
         <div className="description-menu">
+          <div className="menu-item">208 Bowery, NY</div>
+          <div className="menu-item">Nov. 29—Dec. 2</div>
+          <div className="menu-item">—</div>
           <div className="menu-item" onClick={this.onAboutClick}>about</div>
           <div className="menu-item" onClick={this.onPrinciplesClick}>principles</div>
           <div className="menu-item" onClick={this.onProductsClick}>products</div>

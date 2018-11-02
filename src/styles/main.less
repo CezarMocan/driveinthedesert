@@ -71,7 +71,7 @@
     top: 12vh;
     width: 81vw;
     .type-on-path {
-      font-size: 17pt;
+      font-size: 13pt;
     }
   }
   &.path-3 {
@@ -85,7 +85,7 @@
     top: 52vh;
     width: 75vw;
     .type-on-path {
-      font-size: 17pt;
+      font-size: 13pt;
     }
   }
   &.path-5 {
@@ -93,7 +93,50 @@
     top: 84vh;
     width: 66vw;
     .type-on-path {
+      font-size: 13pt;
+    }
+  }
+  &.path-6 {
+    left: -10vw;
+    top: -5vh;
+    width: 110vw;
+    transform: rotateZ(-65deg);
+    .type-on-path {
+      font-size: 13pt;
+    }
+  }
+  &.path-7 {
+    right: 33vw;
+    top: -5vh;
+    width: 86vw;
+    .type-on-path {
+      font-size: 14pt;
+    }
+  }
+  &.path-8 {
+    right: -3vw;
+    top: -4vh;
+    width: 64vw;
+    transform: rotateZ(-85deg);
+    .type-on-path {
+      font-size: 17pt;
+    }
+  }
+  &.path-9 {
+    left: -25vw;
+    top: -5vh;
+    width: 76vw;
+    transform: rotateZ(-25deg);
+    .type-on-path {
       font-size: 20pt;
+    }
+  }
+  &.path-10 {
+    right: -3vw;
+    top: -4vh;
+    width: 66vw;
+    .type-on-path {
+      font-size: 10pt;
     }
   }
 }
@@ -118,7 +161,7 @@
   flex-direction: column;
   .menu-item {
     padding: 0 5px;
-    font-family: "Adieu-Light", courier;
+    font-family: "Adieu-Light", sans-serif;
     font-size: 36pt;
     color: @blue;
     text-align: right;
@@ -128,6 +171,19 @@
     }
   }
 }
+
+.date-location {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: "Akkurat-Mono", courier;
+  font-size: 72pt;
+  color: @blue;
+  text-align: center;
+}
+
 
 
 .description-container {

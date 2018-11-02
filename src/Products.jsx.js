@@ -19,7 +19,7 @@ export default class Principles extends React.Component {
             photography & prints/ <br/>
             jewelry & accessories/ <br/>
             scents & elixirs/ <br/>
-            + a little bit of Fashion<br/>
+            + a little bit of fashion<br/>
           </div>
         </div>
       </div>

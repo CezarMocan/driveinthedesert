@@ -8,8 +8,8 @@
     <clipPath id="clip-path" transform="translate(-16.19 -16.19)"><rect class="cls-1" width="829.94" height="411.06"/></clipPath></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2">
     <path id="curve1" class="cls-3" d="M16.74,394.33S29.12,277.37,210,248.45s165,13.08,257.27-43.92c81.07-50.08,54.73-57,117.73-87S693.2,156.27,813,16.89" transform="translate(-16.19 -16.19)"/>
     <text id="text1" x="50" class="type-on-path">
-        <animate attributeType="XML" attributeName="x" from="-1000" to="1200"
-          dur="24s" repeatCount="indefinite"/>
+        <animate attributeType="XML" attributeName="x" from="-2000" to="2200"
+          dur="48s" repeatCount="indefinite"/>
         <textPath xlink:href="#curve1">
         *purposeful stories*
       </textPath>

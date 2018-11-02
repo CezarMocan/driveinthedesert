@@ -20,7 +20,7 @@ export default class GetInvolved extends React.Component {
             2. propose your products that best encapsulate the values and design principles we want to promote; <br/>
             3. join our evening conversations and events and make new friends.<br/>
             <br/>
-            If you are interested in learning more, <a href="mailto:driveinthedesert@gmail.com">get in touch</a>! 
+            Please <a href="mailto:driveinthedesert@gmail.com">get in touch</a> if you want to learn more! 
           </div>
         </div>
       </div>
