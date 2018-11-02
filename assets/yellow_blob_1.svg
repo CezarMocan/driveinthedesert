@@ -6,7 +6,7 @@
     type="rotate"
     from="0 176 165"
     to="360 176 165"
-    dur="140s"
+    dur="60s"
     repeatCount="indefinite" />
 
 </path>

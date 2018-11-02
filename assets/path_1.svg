@@ -11,7 +11,7 @@
         <animate attributeType="XML" attributeName="x" from="-1000" to="1200"
           dur="24s" repeatCount="indefinite"/>
         <textPath xlink:href="#curve1">
-        carina rose hardy*new york, ny
+        Purposeful Stories
       </textPath>
     </text>
   </g>
