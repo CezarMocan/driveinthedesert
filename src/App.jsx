@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Blobs from '../assets/blobs.svg'
+import BlobsPartial from '../assets/blobs_partial.svg'
 import Logo from './Logo.jsx'
 import Description from './Description.jsx'
 import Path1 from '../assets/path_1.svg'
@@ -95,7 +96,7 @@ export default class App extends React.Component {
 
         <Blobs className="blobs" width={windowWidth + 30}/>
         <Blobs className="blobs" width={windowWidth + 30}/>
-        <Blobs className="blobs" width={windowWidth + 30} style={{position: 'fixed', top: 0, left: 0}}/>
+        <BlobsPartial className="blobs" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0}}/>
         
         <Logo/>
         { currentMenuSelection == MENU.ABOUT && <WhatIsDitd/> }
