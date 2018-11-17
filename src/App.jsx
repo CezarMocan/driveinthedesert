@@ -81,6 +81,10 @@ export default class App extends React.Component {
   onContentClose() {
     this.setState({ currentMenuSelection: MENU.CLOSED})
   }
+// <BlobsPartial className="blobs" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0}}/>        
+
+        // <Blobs className="blobs" width={windowWidth + 30}/>
+        // <Blobs className="blobs" width={windowWidth + 30}/>
 
   render() {
     const { windowWidth, windowHeight, currentSelection, currentMenuSelection } = this.state
@@ -88,7 +92,7 @@ export default class App extends React.Component {
     const { name, link, text } = TEXTS[currentSelection]
     return (
       <div className="main-container">      
-        <Blobs className="blobs" width={windowWidth + 30}/>
+        <Blobs className="blobs" width={windowWidth + 30} ref={component => this._blobs = component}/>
 
         <Path1 className="path path-1"/>
         <Path2 className="path path-2"/>
@@ -100,12 +104,10 @@ export default class App extends React.Component {
         <Path8 className="path path-8"/>
         <Path9 className="path path-9"/>
         <Path10 className="path path-10"/>
-
-        <Blobs className="blobs" width={windowWidth + 30}/>
-        <Blobs className="blobs" width={windowWidth + 30}/>
-
-        <BlobsPartial className="blobs" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0}}/>        
+        
         <Logo/>
+
+        <BlobsPartial className="blobs" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0}}/>
 
         <ContentContainer isOpen={currentMenuSelection != MENU.CLOSED} onClose={this.onContentClose}>
           { currentMenuSelection == MENU.ABOUT && <WhatIsDitd/> }
@@ -113,6 +115,7 @@ export default class App extends React.Component {
           { currentMenuSelection == MENU.PRODUCTS && <Products/> }
           { currentMenuSelection == MENU.GET_INVOLVED && <GetInvolved/> }
         </ContentContainer>
+
 
         <div className="description-menu">
           <div className="menu-item">208 Bowery, NY</div>

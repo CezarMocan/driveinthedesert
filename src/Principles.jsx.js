@@ -15,7 +15,7 @@ export default class Principles extends React.Component {
         <div className="description-text-container">
           <div className="description-text-name">
           </div>
-          <div className="description-text-content large">
+          <div className="description-text-content">
             purposeful stories/<br/>
             sustainable production/<br/>
             pure colors/<br/>
