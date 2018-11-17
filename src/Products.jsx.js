@@ -16,7 +16,7 @@ export default class Principles extends React.Component {
           <div className="description-text-name">
           </div>
           <div className="description-text-content large">
-            ceramics & scuplture/<br/>
+            ceramics & sculpture/<br/>
             photography & prints/<br/>
             jewelry & accessories/<br/>
             scents & elixirs/<br/>

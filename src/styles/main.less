@@ -200,10 +200,31 @@ body {
   text-align: center;
 }
 
-
+.content-container {
+  height: 100vh;
+  width: 69vw;
+  right: 0;
+  top: 0;
+  background-color: @yellow;
+  position: absolute;
+  transition: right 0.2s ease-out;
+  &.closed {
+    right: -69vw;
+  }
+  .content-close-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: @blue;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
 
 .description-container {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   width: 730px;

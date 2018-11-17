@@ -19,12 +19,14 @@ import WhatIsDitd from './WhatIsDitd.jsx'
 import Principles from './Principles.jsx'
 import Products from './Products.jsx'
 import GetInvolved from './GetInvolved.jsx'
+import ContentContainer from './Content.jsx'
 
 const MENU = {
   ABOUT: 'about',
   PRINCIPLES: 'principles',
   PRODUCTS: 'products',
-  GET_INVOLVED: 'get_involved'
+  GET_INVOLVED: 'get_involved',
+  CLOSED: 'closed'
 }
 
 export default class App extends React.Component {
@@ -34,7 +36,7 @@ export default class App extends React.Component {
       windowWidth: window.innerWidth,
       windowHeight: window.innerHeight,
       currentSelection: 0,
-      currentMenuSelection: MENU.ABOUT
+      currentMenuSelection: MENU.CLOSED
     }
     window.addEventListener('resize', this.onResize.bind(this))
 
@@ -42,6 +44,7 @@ export default class App extends React.Component {
     this.onPrinciplesClick = this.onPrinciplesClick.bind(this)
     this.onProductsClick = this.onProductsClick.bind(this)
     this.onGetInvolvedClick = this.onGetInvolvedClick.bind(this)
+    this.onContentClose = this.onContentClose.bind(this)
   }
 
   onResize() {
@@ -75,6 +78,10 @@ export default class App extends React.Component {
     this.setState({ currentMenuSelection: MENU.GET_INVOLVED })
   }
 
+  onContentClose() {
+    this.setState({ currentMenuSelection: MENU.CLOSED})
+  }
+
   render() {
     const { windowWidth, windowHeight, currentSelection, currentMenuSelection } = this.state
     const { TEXTS } = Content
@@ -96,13 +103,17 @@ export default class App extends React.Component {
 
         <Blobs className="blobs" width={windowWidth + 30}/>
         <Blobs className="blobs" width={windowWidth + 30}/>
-        <BlobsPartial className="blobs" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0}}/>
-        
+
+        <BlobsPartial className="blobs" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0}}/>        
         <Logo/>
-        { currentMenuSelection == MENU.ABOUT && <WhatIsDitd/> }
-        { currentMenuSelection == MENU.PRINCIPLES && <Principles/> }
-        { currentMenuSelection == MENU.PRODUCTS && <Products/> }
-        { currentMenuSelection == MENU.GET_INVOLVED && <GetInvolved/> }
+
+        <ContentContainer isOpen={currentMenuSelection != MENU.CLOSED} onClose={this.onContentClose}>
+          { currentMenuSelection == MENU.ABOUT && <WhatIsDitd/> }
+          { currentMenuSelection == MENU.PRINCIPLES && <Principles/> }
+          { currentMenuSelection == MENU.PRODUCTS && <Products/> }
+          { currentMenuSelection == MENU.GET_INVOLVED && <GetInvolved/> }
+        </ContentContainer>
+
         <div className="description-menu">
           <div className="menu-item">208 Bowery, NY</div>
           <div className="menu-item">Nov. 29—Dec. 2</div>
