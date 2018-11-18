@@ -11,7 +11,7 @@ export default class Principles extends React.Component {
 
   render() {
     return (
-      <div className="description-container"  style={{marginTop: '0'}}>
+      <div className="description-container">
         <div className="description-text-container">
           <div className="description-text-name">
           </div>
@@ -20,7 +20,7 @@ export default class Principles extends React.Component {
             sustainable production<br/>
             pure colors<br/>
             raw materials<br/>
-            essential shapes<br/>
+            simple shapes<br/>
           </div>
         </div>
       </div>

@@ -11,12 +11,12 @@ export default class WhatIsDitd extends React.Component {
 
   render() {
     return (
-      <div className="description-container" style={{marginTop: '0'}}>
+      <div className="description-container">
         <div className="description-text-container">
           <div className="description-text-name">
           </div>
           <div className="description-text-content large">
-          Drive in the Desert, or simply DITD, is a creative pop-up that brings together artists and makers to explore unique products, discover personal and artistic journeys and create gifting experiences.<br/>
+          Drive in the Desert, or simply DITD, is a creative pop-up that brings together artists and makers to explore unique products, discover personal journeys and create gifting experiences.<br/>
           <br/>
           DITD started out during an epic Drive In The Arizona Desert as a tribute to our mutual love for sustainable craft and genuine connections.<br/>
           <br/>
