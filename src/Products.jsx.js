@@ -21,7 +21,7 @@ export default class Principles extends React.Component {
               Sabina Gal is a Romanian writer and filmmaker living in New York City. She has written, directed and produced two films and has been publishing essays and stories for the past ten years.
             </div>
             <div class="participant-links">
-              <a href="https://www.instagram.com/sabina.gal/" target="__blank">instagram</a>&ensp;<a href="sabinagal.com" target="__blank">website</a>
+              <a href="https://www.instagram.com/sabina.gal/" target="__blank">instagram</a>&ensp;<a href="http://sabinagal.com" target="__blank">website</a>
             </div>
 
 
@@ -59,7 +59,7 @@ export default class Principles extends React.Component {
               Michaela is a contributor at T: The New York Times Magazine, Vogue, Departures, Travel + Leisure, GQ, Men's Journal, National Geographic, Robb Report, Conde Nast Traveller UK, Hemispheres, American Way, and more. Based in South Florida, She is a South America expert who travels the world to report on inspiring, impactful adventures. In addition to travel writing and photography, Michaela also consults with brands to build their content strategy through digital and creative direction.
             </div>
             <div class="participant-links">
-              <a href="https://www.instagram.com/michaelatrimble/" target="__blank">instagram</a>&ensp;<a href="www.michaelatrimble.com" target="__blank">website</a>
+              <a href="https://www.instagram.com/michaelatrimble/" target="__blank">instagram</a>&ensp;<a href="http://www.michaelatrimble.com" target="__blank">website</a>
             </div>
 
 
@@ -68,7 +68,7 @@ export default class Principles extends React.Component {
               Quoted Magazine is a love letter to New York from the people living here. Quoted provides its readers with an inside look at the lives of New Yorkers, visiting them in their homes, and getting the truth on city living and the hot spots to visit. Quoted takes pride in telling unfiltered, honest stories in this time of murky media. The publication also aims to spread love, tolerance, and acceptance for diversity through sharing these unique stories.
             </div>
             <div class="participant-links">
-              <a href="https://www.instagram.com/quoted_magazine/" target="__blank">instagram</a>&ensp;<a href="www.quotedmagazine.com" target="__blank">website</a>
+              <a href="https://www.instagram.com/quoted_magazine/" target="__blank">instagram</a>&ensp;<a href="http://www.quotedmagazine.com" target="__blank">website</a>
             </div>
 
             <div class="participant-name">as promised/<span class="mono">magazine</span></div>
@@ -85,7 +85,7 @@ export default class Principles extends React.Component {
 Her photography aims to present personal stories through esthetics and creative angles.
             </div>
             <div class="participant-links">
-              <a href="https://www.instagram.com/tinabfoto/" target="__blank">instagram</a>&ensp;<a href="www.tinabfoto.com" target="__blank">website</a>
+              <a href="https://www.instagram.com/tinabfoto/" target="__blank">instagram</a>&ensp;<a href="http://www.tinabfoto.com" target="__blank">website</a>
             </div>
 
             <div class="participant-name">imalinz/<span class="mono">jewelry</span></div>
@@ -93,7 +93,7 @@ Her photography aims to present personal stories through esthetics and creative 
               IMALINZ is a jewellery brand established in 2018. Each piece is made by hand in Bucharest, Romania by master artisans using rare metals, pearls & stones from all over the world. The signature gold and pearls pieces enclose the line's permanent collection—which combines the classic and the new into a modern vision of contemporary jewellery.
             </div>
             <div class="participant-links">
-              <a href="https://www.instagram.com/imalinz/" target="__blank">instagram</a>&ensp;<a href="www.imalinz.com" target="__blank">website</a>
+              <a href="https://www.instagram.com/imalinz/" target="__blank">instagram</a>&ensp;<a href="http://www.imalinz.com" target="__blank">website</a>
             </div>
 
             <div class="participant-name">animamundi/<span class="mono">powders&elixirs</span></div>
