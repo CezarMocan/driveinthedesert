@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from '../assets/logo_blue.svg'
 import DescriptionBlob from '../assets/yellow_blob_2.svg'
+import Logo from './Logo.jsx'
 
 export default class GetInvolved extends React.Component {
   constructor(props) {
@@ -12,11 +12,13 @@ export default class GetInvolved extends React.Component {
   render() {
     const { isOpen, children, onClose } = this.props
     return (
-      <div className={`content-container ${isOpen ? '' : 'closed'}`} onClick={onClose}>
-        <div className='content-close-btn'>✕</div>
+      <div className={`content-container ${isOpen ? '' : 'closed'}`}>
+        <Logo/>
         {children}
       </div>
     )
   }
 }
+
+//<div className='content-close-btn' onClick={onClose} >✕</div>
 

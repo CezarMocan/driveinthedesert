@@ -34,27 +34,29 @@ body {
   margin-left: -15px;
   margin-top: -15px;
   width: 105vw;
-  transform: scaleX(5) scaleY(5);
+  transform: scaleX(2) scaleY(2);
 }
 
 .logo-container {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: ~"calc(50% - 50px)";
+  left: ~"calc(25% - 50px)";
   .logo {
     fill: @blue;
     stroke: none;
     position: absolute;
-    top: 5px;
-    left: 8px;
+    top: 0;
+    left: 0;
     width: 105px;
   }
   .logo-blob {
     position: absolute;
-    top: -35px;
-    left: -45px;
+    top: -45px;
+    left: -55px;
     width: 375px;
     fill: @yellow;
+    stroke: @light-yellow;
+    stroke-width: 5px;
   }
 }
 .path {
@@ -158,6 +160,19 @@ body {
   }
 }
 
+.menu-contact {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  a {
+    text-decoration: none;
+    color: @blue;
+  }
+}
+
 .description-menu {
   position: fixed;
   right: 5px;
@@ -165,29 +180,31 @@ body {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  .menu-item {
-    padding: 0 5px;
-    font-family: "Adieu-Light", sans-serif;
-    color: @blue;
-    text-align: right;
-    font-size: 18pt;    
-    @media only screen and (max-width: 1200px) {
-      font-size: 16pt;
-    }
-    @media only screen and (max-height: 600px) {
-      font-size: 14pt;
-    }
-    @media only screen and (max-width: 500px) {
-      font-size: 14pt;
-    }
-    &.link {
-      &:hover {
-        cursor: pointer;
-        text-decoration: line-through;
-      }
+}
+
+.menu-item {
+  padding: 0 5px;
+  font-family: "Adieu-Light", sans-serif;
+  color: @blue;
+  text-align: right;
+  font-size: 16pt;
+  @media only screen and (max-width: 1200px) {
+    font-size: 14pt;
+  }
+  @media only screen and (max-height: 600px) {
+    font-size: 12pt;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 12pt;
+  }
+  &.link {
+    &:hover {
+      cursor: pointer;
+      text-decoration: line-through;
     }
   }
 }
+
 
 .date-location {
   position: fixed;
@@ -203,11 +220,15 @@ body {
 
 .content-container {
   height: 100vh;
-  width: 69vw;
+  width: 50vw;
+  @media only screen and (max-width: 850px) {
+    width: 75vw;
+  }
   right: 0;
   top: 0;
   background-color: @yellow;
   position: absolute;
+  overflow-y: scroll;
   transition: right 0.2s ease-out;
   &.closed {
     right: -69vw;
@@ -224,13 +245,51 @@ body {
   }
 }
 
+.participant-name {
+    font-family: "Adieu-Light", sans-serif;
+    line-height: 1.2;
+    color: @blue;
+    font-size: 16pt;
+    @media only screen and (max-width: 1200px) {
+      font-size: 14pt;
+    }
+    @media only screen and (max-height: 600px) {
+      font-size: 12pt;
+    }
+    @media only screen and (max-width: 500px) {
+      font-size: 12pt;
+    }
+}
+
+.participant-links {
+  font-family: "Adieu-Light", sans-serif;
+  font-size: 10pt;
+  a {
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      text-decoration: line-through;
+    }
+  }
+  margin-bottom: 10px;
+}
+
+.participant-text {
+  line-height: 1.5;
+  padding: 5px 0;
+}
+
 .description-container {
   right: 0;
   top: 0;
-  margin-right: ~"calc(240px + 7.69vw)";
-  margin-left: 30px;
-  margin-top: 5px;
-  max-width: 30vw;
+  margin-left: 40px;
+  margin-right: ~"calc(220px + 2.69vw)";
+  max-width: ~"calc(50vw - 220px - 2.69vw - 40px)";
+  @media only screen and (max-width: 850px) {
+    top: 200px;
+    margin-right: 5px;
+    max-width: 75vw;
+  }
   float: right;
   .description-text-container {
     text-align: right;
@@ -247,18 +306,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    line-height: 1.3;
+    line-height: 1.5;
     a {
       color: @blue;
     }
 
     .description-text-content {
       color: @blue;
+      z-index: 1000;
       &.large {
-        font-family: "Akkurat-Mono", courier;
-        font-size: 18pt;
-        @media only screen and (max-width: 500px) {
+        font-family: "Adieu-Light", sans-serif;
+        line-height: 1.2;
+        color: @blue;
+        font-size: 16pt;
+        @media only screen and (max-width: 1200px) {
           font-size: 14pt;
+        }
+        @media only screen and (max-height: 600px) {
+          font-size: 12pt;
+        }
+        @media only screen and (max-width: 500px) {
+          font-size: 12pt;
         }
       }
     }

@@ -36,7 +36,7 @@ export default class App extends React.Component {
       windowWidth: window.innerWidth,
       windowHeight: window.innerHeight,
       currentSelection: 0,
-      currentMenuSelection: MENU.CLOSED
+      currentMenuSelection: MENU.ABOUT
     }
     window.addEventListener('resize', this.onResize.bind(this))
 
@@ -45,6 +45,19 @@ export default class App extends React.Component {
     this.onProductsClick = this.onProductsClick.bind(this)
     this.onGetInvolvedClick = this.onGetInvolvedClick.bind(this)
     this.onContentClose = this.onContentClose.bind(this)
+    this.animateBlobs = this.animateBlobs.bind(this)
+    
+    this.mScaleX = 2
+    this.mScaleY = 2
+    this.translateX = 0
+    this.translateY = 0
+    this.mSgnX = this.mSgnY = 1
+
+    this.pScaleX = 2
+    this.pScaleY = 2
+    this.pTranslateX = 0
+    this.pTranslateY = 0
+    this.pSgnX = this.pSgnY = -1    
   }
 
   onResize() {
@@ -54,7 +67,29 @@ export default class App extends React.Component {
     })
   }
 
+  animateBlobs() {
+    const tS = (new Date().getTime()) / 4000
+    const fX = 1 + (Math.sin(tS) / 25)
+    const fY = 1 + (Math.sin(tS + 0.2) / 25)
+    if (Math.random() < 0.0005) this.mSgnX = -this.mSgnX
+    if (Math.random() < 0.001) this.mSgnY = -this.mSgnY
+    this.translateX += 0.01 * this.mSgnX
+    this.translateY += 0.01 * this.mSgnY    
+    $("#blobs-main").css("transform", `scaleX(${this.mScaleX * fX}) scaleY(${this.mScaleY * fY}) translateX(${this.translateX}px) translateY(${this.translateY}px)`)
+
+    const pfX = 1 + (Math.sin(tS - 1) / 30)
+    const pfY = 1 + (Math.sin(tS + 2) / 28)
+    if (Math.random() < 0.0005) this.pSgnX = -this.mSgnX
+    if (Math.random() < 0.0008) this.pSgnY = -this.mSgnY
+    this.pTranslateX += 0.008 * this.mSgnX
+    this.pTranslateY += 0.012 * this.mSgnY    
+    $("#blobs-partial").css("transform", `scaleX(${this.pScaleX * pfX}) scaleY(${this.pScaleY * pfY}) translateX(${this.pTranslateX}px) translateY(${this.pTranslateY}px)`)
+
+    requestAnimationFrame(this.animateBlobs)
+  }
+
   componentDidMount() {
+    requestAnimationFrame(this.animateBlobs)
     // $("#text1").click(() => this.setState({ currentSelection: 0}))
     // $("#text2").click(() => this.setState({ currentSelection: 1}))
     // $("#text3").click(() => this.setState({ currentSelection: 2}))
@@ -92,7 +127,10 @@ export default class App extends React.Component {
     const { name, link, text } = TEXTS[currentSelection]
     return (
       <div className="main-container">      
-        <Blobs className="blobs" width={windowWidth + 30} ref={component => this._blobs = component}/>
+        <Blobs id="blobs-main" className="blobs" width={windowWidth + 30}/>
+
+        <Blobs className="blobs" width={windowWidth + 30}/>
+        <Blobs className="blobs" width={windowWidth + 30}/>
 
         <Path1 className="path path-1"/>
         <Path2 className="path path-2"/>
@@ -103,11 +141,9 @@ export default class App extends React.Component {
         <Path7 className="path path-7"/>
         <Path8 className="path path-8"/>
         <Path9 className="path path-9"/>
-        <Path10 className="path path-10"/>
-        
-        <Logo/>
+        <Path10 className="path path-10"/>      
 
-        <BlobsPartial className="blobs" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0}}/>
+        <BlobsPartial id="blobs-partial" className="blobs blobs-partial" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0, transform: 'translateX(700px) translateY(500px) scale(5)'}}/>
 
         <ContentContainer isOpen={currentMenuSelection != MENU.CLOSED} onClose={this.onContentClose}>
           { currentMenuSelection == MENU.ABOUT && <WhatIsDitd/> }
@@ -116,15 +152,19 @@ export default class App extends React.Component {
           { currentMenuSelection == MENU.GET_INVOLVED && <GetInvolved/> }
         </ContentContainer>
 
-
         <div className="description-menu">
           <div className="menu-item">208 Bowery, NY</div>
           <div className="menu-item">Nov. 29—Dec. 2</div>
           <div className="menu-item">—</div>
           <div className="menu-item link" onClick={this.onAboutClick}>about</div>
+          <div className="menu-item link" onClick={this.onProductsClick}>participants</div>
           <div className="menu-item link" onClick={this.onPrinciplesClick}>principles</div>
-          <div className="menu-item link" onClick={this.onProductsClick}>products</div>
           <div className="menu-item link" onClick={this.onGetInvolvedClick}>get involved</div>
+        </div>
+
+        <div className="menu-contact">
+          <div className="menu-item link"><a href="mailto:driveinthedesert@gmail.com" target="__blank">email</a></div>
+          <div className="menu-item link"><a href="http://instagram.com/drive.in.the.desert" target="__blank">instagram</a></div>
         </div>
 
       </div>
