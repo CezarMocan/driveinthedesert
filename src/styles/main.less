@@ -19,9 +19,9 @@ body {
 }
 
 .spacing {
-  height: 3px;
+  height: 5px;
   &.large {
-    height: 10px;
+    height: 13px;
   }
 }
 
@@ -47,7 +47,7 @@ body {
 .logo-container {
   position: fixed;
   top: ~"calc(50% - 50px)";
-  left: ~"calc(25% - 50px)";
+  left: ~"calc(75% - 50px)";
   .logo {
     fill: @blue;
     stroke: none;
@@ -228,10 +228,7 @@ body {
 .content-container {
   height: 100vh;
   width: 50vw;
-  @media only screen and (max-width: 850px) {
-    width: 75vw;
-  }
-  right: 0;
+  left: 0;
   top: 0;
   background-color: @yellow;
   position: absolute;
@@ -302,18 +299,18 @@ body {
 .description-container {
   right: 0;
   top: 0;
-  margin-left: 40px;
-  margin-right: ~"calc(220px + 2.69vw)";
-  max-width: ~"calc(50vw - 220px - 2.69vw - 40px)";
-  @media only screen and (max-width: 850px) {
-    margin-top: 200px;
-    top: 200px;
-    margin-right: 5px;
-    max-width: 75vw;
-  }
-  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 75%;
+  // @media only screen and (max-width: 850px) {
+  //   margin-top: 200px;
+  //   top: 200px;
+  //   margin-right: 5px;
+  //   max-width: 75vw;
+  // }
+  float: left;
   .description-text-container {
-    text-align: right;
+    text-align: left;
     color: @blue;
     font-family: "Akkurat-Mono", sans-serif;
     font-size: 10pt;
@@ -337,9 +334,9 @@ body {
       z-index: 1000;
       &.large {
         font-family: "Adieu-Light", sans-serif;
-        line-height: 1.2;
+        line-height: 1.1;
         color: @blue;
-        font-size: 16pt;
+        font-size: 22pt;
         @media only screen and (max-width: 1200px) {
           font-size: 14pt;
         }

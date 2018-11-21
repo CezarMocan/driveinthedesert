@@ -31,7 +31,7 @@ export default class WhatIsDitd extends React.Component {
           4—raw materials<br/>
           <div className="spacing"></div>
           5—simple shapes<br/>
-          <div className="spacing large"></div><div className="spacing large"></div><div className="spacing large"></div><div className="spacing large"></div>
+          <div className="spacing large"></div><div className="spacing large"></div><div className="spacing large"></div>
           Ksenia & Beatrice<br/>
           </div>
         </div>
