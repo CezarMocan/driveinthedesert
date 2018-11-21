@@ -19,6 +19,7 @@ import WhatIsDitd from './WhatIsDitd.jsx'
 import Principles from './Principles.jsx'
 import Artists from './Artists.jsx'
 import Makers from './Makers.jsx'
+import Partners from './Partners.jsx'
 import GetInvolved from './GetInvolved.jsx'
 import ContentContainer from './Content.jsx'
 
@@ -150,6 +151,7 @@ export default class App extends React.Component {
           { currentMenuSelection == MENU.PRINCIPLES && <Principles/> }
           { currentMenuSelection == MENU.ARTISTS && <Artists/> }
           { currentMenuSelection == MENU.MAKERS && <Makers/> }
+          { currentMenuSelection == MENU.PARTNERS && <Partners/> }
           { currentMenuSelection == MENU.GET_INVOLVED && <GetInvolved/> }
         </ContentContainer>
 
@@ -174,7 +176,7 @@ export default class App extends React.Component {
           <div className="menu-item link" onClick={this.onMakersClick}>makers</div>
           <div className="menu-item link" onClick={this.onArtistsClick}>artists</div>
           <div className="menu-item link" onClick={this.onPartnersClick}>partners</div>
-          
+          <div className="menu-item link" onClick={this.onPartnersClick}>events</div>
           <div className="menu-item link" onClick={this.onGetInvolvedClick}>get involved</div>
         </div>
 

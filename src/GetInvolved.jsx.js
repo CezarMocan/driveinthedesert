@@ -16,13 +16,14 @@ export default class GetInvolved extends React.Component {
           <div className="description-text-name">
           </div>
           <div className="description-text-content large">
-            We would love for you to be part of our journey! If you are an artist or a maker, this is how you can get involved:<br/><br/>
+            We would love for you to be part of our journey! If you are an artist or a maker, this is how you can get involved:<br/>
+            <div className="spacing large"></div>
             1—collaborate with us in creating DITD product capsule<br/>
-            <div class="spacing large"></div>
+            <div className="spacing"></div>
             2—propose your products that best encapsulate the values and design principles we share<br/>
-            <div class="spacing large"></div>
+            <div className="spacing"></div>
             3—join our evening conversations and events and make new friends<br/>
-            <br/>
+            <div className="spacing large"></div>
             Please <a href="mailto:driveinthedesert@gmail.com">get in touch</a> to learn more! 
           </div>
         </div>

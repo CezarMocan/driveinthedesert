@@ -17,21 +17,21 @@ export default class WhatIsDitd extends React.Component {
           </div>
           <div className="description-text-content large">
           Drive in the Desert, or simply DITD, is a creative pop-up that brings together artists and makers to explore unique products, discover personal journeys and create gifting experiences.<br/>
-          <br/>
+          <div className="spacing large"></div>
           DITD started out during an epic Drive In The Arizona Desert as a tribute to our mutual love for sustainable craft and genuine connections.<br/>
-          <br/>
+          <div className="spacing large"></div>
           These are the design principles we stand by:<br/>
-          <div class="spacing large"></div>
+          <div className="spacing large"></div>
           1—purposeful stories<br/>
-          <div class="spacing"></div>
+          <div className="spacing"></div>
           2—sustainable production<br/>
-          <div class="spacing"></div>
+          <div className="spacing"></div>
           3—pure colors<br/>
-          <div class="spacing"></div>
+          <div className="spacing"></div>
           4—raw materials<br/>
-          <div class="spacing"></div>
+          <div className="spacing"></div>
           5—simple shapes<br/>
-          <br/>
+          <div className="spacing large"></div><div className="spacing large"></div><div className="spacing large"></div><div className="spacing large"></div>
           Ksenia & Beatrice<br/>
           </div>
         </div>
