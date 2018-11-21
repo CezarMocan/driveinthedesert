@@ -21,6 +21,7 @@ import Artists from './Artists.jsx'
 import Makers from './Makers.jsx'
 import Partners from './Partners.jsx'
 import GetInvolved from './GetInvolved.jsx'
+import Events from './Events.jsx'
 import ContentContainer from './Content.jsx'
 
 const MENU = {
@@ -30,6 +31,7 @@ const MENU = {
   MAKERS: 'makers',
   PARTNERS: 'partners',
   GET_INVOLVED: 'get_involved',
+  EVENTS: 'events',
   CLOSED: 'closed'
 }
 
@@ -49,8 +51,9 @@ export default class App extends React.Component {
     this.onArtistsClick = this.onArtistsClick.bind(this)
     this.onMakersClick = this.onMakersClick.bind(this)
     this.onPartnersClick = this.onPartnersClick.bind(this)
+    this.onEventsClick = this.onEventsClick.bind(this)
     this.onGetInvolvedClick = this.onGetInvolvedClick.bind(this)
-    this.onContentClose = this.onContentClose.bind(this)
+    this.onContentClose = this.onContentClose.bind(this)    
     this.animateBlobs = this.animateBlobs.bind(this)
     
     this.mScaleX = 2
@@ -123,6 +126,10 @@ export default class App extends React.Component {
     this.setState({ currentMenuSelection: MENU.PARTNERS })
   }
 
+  onEventsClick() {
+    this.setState({ currentMenuSelection: MENU.EVENTS })
+  }
+
   onGetInvolvedClick() {
     this.setState({ currentMenuSelection: MENU.GET_INVOLVED })
   }
@@ -152,6 +159,7 @@ export default class App extends React.Component {
           { currentMenuSelection == MENU.ARTISTS && <Artists/> }
           { currentMenuSelection == MENU.MAKERS && <Makers/> }
           { currentMenuSelection == MENU.PARTNERS && <Partners/> }
+          { currentMenuSelection == MENU.EVENTS && <Events/> }
           { currentMenuSelection == MENU.GET_INVOLVED && <GetInvolved/> }
         </ContentContainer>
 
@@ -176,7 +184,7 @@ export default class App extends React.Component {
           <div className="menu-item link" onClick={this.onMakersClick}>makers</div>
           <div className="menu-item link" onClick={this.onArtistsClick}>artists</div>
           <div className="menu-item link" onClick={this.onPartnersClick}>partners</div>
-          <div className="menu-item link" onClick={this.onPartnersClick}>events</div>
+          <div className="menu-item link" onClick={this.onEventsClick}>events</div>
           <div className="menu-item link" onClick={this.onGetInvolvedClick}>get involved</div>
         </div>
 
