@@ -254,10 +254,10 @@ body {
 }
 
 .participant-name {
-    font-family: "Adieu-Light", sans-serif;
-    line-height: 1.2;
+    font-family: "Akkurat-Mono", sans-serif;
+    line-height: 1.1;
     color: @blue;
-    font-size: 16pt;
+    font-size: 24pt;
     @media only screen and (max-width: 1200px) {
       font-size: 14pt;
     }
@@ -268,8 +268,8 @@ body {
       font-size: 12pt;
     }
     .mono {
-      font-family: "Akkurat-Mono", courier;
-      font-size: 8pt;
+      font-family: "Adieu-Light", sans-serif;
+      font-size: 10pt;
     }
 }
 
@@ -283,12 +283,24 @@ body {
       text-decoration: line-through;
     }
   }
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .participant-text {
-  line-height: 1.5;
-  padding: 5px 0 3px 0;
+  font-family: "Adieu-Light", sans-serif;
+  line-height: 1.2;
+  color: @blue;
+  font-size: 22pt;
+  @media only screen and (max-width: 1200px) {
+    font-size: 14pt;
+  }
+  @media only screen and (max-height: 600px) {
+    font-size: 12pt;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 12pt;
+  }
+  padding: 3px 0 3px 0;
 }
 
 .participant-image {
