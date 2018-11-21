@@ -13,7 +13,6 @@ export default class GetInvolved extends React.Component {
     const { isOpen, children, onClose } = this.props
     return (
       <div className={`content-container ${isOpen ? '' : 'closed'}`}>
-        <Logo/>
         {children}
       </div>
     )

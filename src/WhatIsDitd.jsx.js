@@ -20,6 +20,18 @@ export default class WhatIsDitd extends React.Component {
           <br/>
           DITD started out during an epic Drive In The Arizona Desert as a tribute to our mutual love for sustainable craft and genuine connections.<br/>
           <br/>
+          These are the design principles we stand by:<br/>
+          <div class="spacing large"></div>
+          1—purposeful stories<br/>
+          <div class="spacing"></div>
+          2—sustainable production<br/>
+          <div class="spacing"></div>
+          3—pure colors<br/>
+          <div class="spacing"></div>
+          4—raw materials<br/>
+          <div class="spacing"></div>
+          5—simple shapes<br/>
+          <br/>
           Ksenia & Beatrice<br/>
           </div>
         </div>

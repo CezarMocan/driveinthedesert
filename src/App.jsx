@@ -17,14 +17,17 @@ import Path10 from '../assets/path_10.svg'
 import Content from './contents.json'
 import WhatIsDitd from './WhatIsDitd.jsx'
 import Principles from './Principles.jsx'
-import Products from './Products.jsx'
+import Artists from './Artists.jsx'
+import Makers from './Makers.jsx'
 import GetInvolved from './GetInvolved.jsx'
 import ContentContainer from './Content.jsx'
 
 const MENU = {
   ABOUT: 'about',
   PRINCIPLES: 'principles',
-  PRODUCTS: 'products',
+  ARTISTS: 'artists',
+  MAKERS: 'makers',
+  PARTNERS: 'partners',
   GET_INVOLVED: 'get_involved',
   CLOSED: 'closed'
 }
@@ -42,7 +45,9 @@ export default class App extends React.Component {
 
     this.onAboutClick = this.onAboutClick.bind(this)
     this.onPrinciplesClick = this.onPrinciplesClick.bind(this)
-    this.onProductsClick = this.onProductsClick.bind(this)
+    this.onArtistsClick = this.onArtistsClick.bind(this)
+    this.onMakersClick = this.onMakersClick.bind(this)
+    this.onPartnersClick = this.onPartnersClick.bind(this)
     this.onGetInvolvedClick = this.onGetInvolvedClick.bind(this)
     this.onContentClose = this.onContentClose.bind(this)
     this.animateBlobs = this.animateBlobs.bind(this)
@@ -105,8 +110,16 @@ export default class App extends React.Component {
     this.setState({ currentMenuSelection: MENU.PRINCIPLES })
   }
 
-  onProductsClick() {
-    this.setState({ currentMenuSelection: MENU.PRODUCTS })
+  onArtistsClick() {
+    this.setState({ currentMenuSelection: MENU.ARTISTS })
+  }
+
+  onMakersClick() {
+    this.setState({ currentMenuSelection: MENU.MAKERS })
+  }
+
+  onPartnersClick() {
+    this.setState({ currentMenuSelection: MENU.PARTNERS })
   }
 
   onGetInvolvedClick() {
@@ -132,6 +145,14 @@ export default class App extends React.Component {
         <Blobs className="blobs" width={windowWidth + 30}/>
         <Blobs className="blobs" width={windowWidth + 30}/>
 
+        <ContentContainer isOpen={currentMenuSelection != MENU.CLOSED} onClose={this.onContentClose}>
+          { currentMenuSelection == MENU.ABOUT && <WhatIsDitd/> }
+          { currentMenuSelection == MENU.PRINCIPLES && <Principles/> }
+          { currentMenuSelection == MENU.ARTISTS && <Artists/> }
+          { currentMenuSelection == MENU.MAKERS && <Makers/> }
+          { currentMenuSelection == MENU.GET_INVOLVED && <GetInvolved/> }
+        </ContentContainer>
+
         <Path1 className="path path-1"/>
         <Path2 className="path path-2"/>
         <Path3 className="path path-3"/>
@@ -145,22 +166,19 @@ export default class App extends React.Component {
 
         <BlobsPartial id="blobs-partial" className="blobs blobs-partial" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0, transform: 'translateX(700px) translateY(500px) scale(5)'}}/>
 
-        <ContentContainer isOpen={currentMenuSelection != MENU.CLOSED} onClose={this.onContentClose}>
-          { currentMenuSelection == MENU.ABOUT && <WhatIsDitd/> }
-          { currentMenuSelection == MENU.PRINCIPLES && <Principles/> }
-          { currentMenuSelection == MENU.PRODUCTS && <Products/> }
-          { currentMenuSelection == MENU.GET_INVOLVED && <GetInvolved/> }
-        </ContentContainer>
-
         <div className="description-menu">
           <div className="menu-item">208 Bowery, NY</div>
           <div className="menu-item">Nov. 29—Dec. 2</div>
           <div className="menu-item">—</div>
           <div className="menu-item link" onClick={this.onAboutClick}>about</div>
-          <div className="menu-item link" onClick={this.onProductsClick}>participants</div>
-          <div className="menu-item link" onClick={this.onPrinciplesClick}>principles</div>
+          <div className="menu-item link" onClick={this.onMakersClick}>makers</div>
+          <div className="menu-item link" onClick={this.onArtistsClick}>artists</div>
+          <div className="menu-item link" onClick={this.onPartnersClick}>partners</div>
+          
           <div className="menu-item link" onClick={this.onGetInvolvedClick}>get involved</div>
         </div>
+
+        <Logo/>
 
         <div className="menu-contact">
           <div className="menu-item link"><a href="mailto:driveinthedesert@gmail.com" target="__blank">email</a></div>
