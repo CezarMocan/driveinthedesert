@@ -30,7 +30,13 @@ export default class Events extends React.Component {
   }
 
   componentDidMount() {
-    setInterval(this.updateContent, 1000)
+    this._interval = setInterval(this.updateContent, 1000)
+  }
+  componentWillUnmount() {
+    if (this._interval) {
+      clearInterval(this._interval)
+      this._interval = null
+    }
   }
   // <DescriptionBlob className="description-blob"/>
 
