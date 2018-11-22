@@ -30,6 +30,7 @@ export default class Artists extends React.Component {
               Ethan Race is a Scottish-born experimental filmmaker based in New York City.
             </div>
             <div className="participant-links">
+              <a href="https://www.instagram.com/ethan.race/" target="__blank">instagram</a>&ensp;<a href="http://www.ethanrace.com" target="__blank">website</a>
             </div>
 
 
@@ -47,7 +48,7 @@ export default class Artists extends React.Component {
               Alana is a founder, artist, and investor who is converging the worlds of art and venture.
             </div>
             <div className="participant-links">
-              <a href="https://www.instagram.com/artistafterhours/" target="__blank">instagram</a>
+              <a href="https://www.instagram.com/artistafterhours/" target="__blank">instagram</a>&ensp;<a href="http://www.alanapodreciks.com" target="__blank">website</a>
             </div>
 
 
@@ -73,7 +74,7 @@ export default class Artists extends React.Component {
               As Promised is an idea—an alternative to the current situation. A borderless aspirational life we would all like to live. A thoughtful livelihood that is driven by wellness, respect, and beauty.
             </div>
             <div className="participant-links">
-              <a href="https://www.instagram.com/aspromisedmag/" target="__blank">instagram</a>
+              <a href="https://www.instagram.com/aspromisedmag/" target="__blank">instagram</a>&ensp;<a href="http://www.as-promised.com" target="__blank">website</a>
             </div>
 
             <div className="participant-name">/tina b foto/<span className="mono">photography</span></div>

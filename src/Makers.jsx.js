@@ -29,7 +29,7 @@ export default class Artists extends React.Component {
               Anima Mundi Apothecary is composed of the most pristine, and medicinal botanicals found in nature.
             </div>
             <div className="participant-links">
-              <a href="https://www.instagram.com/animamundiherbals/" target="__blank">instagram</a>
+              <a href="https://www.instagram.com/animamundiherbals/" target="__blank">instagram</a>&ensp;<a href="http://www.animamundiherbals.com" target="__blank">website</a>
             </div>
 
             <div className="participant-name">/ttanti watches/<span className="mono">watches</span></div>
@@ -37,7 +37,7 @@ export default class Artists extends React.Component {
               TTANTI is a watch  that  combines  the  long  Swiss  tradition  of  watchmaking  with  the  noble  materials  available  in  the  South  of  Chile.
             </div>
             <div className="participant-links">
-              <a href="https://www.instagram.com/ttantiwatches/" target="__blank">instagram</a>
+              <a href="https://www.instagram.com/ttantiwatches/" target="__blank">instagram</a>&ensp;<a href="https://www.ttanti.com/" target="__blank">website</a>
             </div>
 
             <div className="participant-name">/kokili/<span className="mono">vases</span></div>
@@ -45,7 +45,15 @@ export default class Artists extends React.Component {
               Founded by So Jung Lee and Gregory Walker, Kokili is driven by creating beautiful objects and experiences, celebrating the optimism of life.
             </div>
             <div className="participant-links">
+              <a href="https://www.instagram.com/kokili_projects/" target="__blank">instagram</a>&ensp;<a href="http://www.kokiliprojects.com" target="__blank">website</a>
+            </div>
 
+            <div className="participant-name">/risa nishimori/<span className="mono">ceramics</span></div>
+            <div className="participant-text">
+              Risa Nisimori studied proper wheel throwing in Japan, but her preferred method is Nerikomi, using different mixed clays and creating new and interesting patterns.
+            </div>
+            <div className="participant-links">
+              <a href="https://www.instagram.com/rizaasama/" target="__blank">instagram</a>&ensp;<a href="www.risanishimori.com" target="__blank">website</a>
             </div>
 
           </div>

@@ -56,16 +56,16 @@ export default class App extends React.Component {
     this.onContentClose = this.onContentClose.bind(this)    
     this.animateBlobs = this.animateBlobs.bind(this)
     
-    this.mScaleX = 2
-    this.mScaleY = 2
+    this.mScaleX = 1.5
+    this.mScaleY = 1.5
     this.translateX = 0
     this.translateY = 0
     this.mSgnX = this.mSgnY = 1
 
-    this.pScaleX = 2
-    this.pScaleY = 2
-    this.pTranslateX = 0
-    this.pTranslateY = 0
+    this.pScaleX = 1.5
+    this.pScaleY = 1.5
+    this.pTranslateX = -200
+    this.pTranslateY = -100
     this.pSgnX = this.pSgnY = -1    
   }
 
@@ -153,6 +153,14 @@ export default class App extends React.Component {
         <Blobs className="blobs" width={windowWidth + 30}/>
         <Blobs className="blobs" width={windowWidth + 30}/>
 
+        <Path1 className="path path-1"/>
+        <Path2 className="path path-2"/>
+        <Path3 className="path path-3"/>
+        <Path4 className="path path-4"/>
+        <Path5 className="path path-5"/>
+
+        <BlobsPartial id="blobs-partial" className="blobs blobs-partial" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0, transform: 'translateX(700px) translateY(500px) scale(5)'}}/>
+
         <ContentContainer isOpen={currentMenuSelection != MENU.CLOSED} onClose={this.onContentClose}>
           { currentMenuSelection == MENU.ABOUT && <WhatIsDitd/> }
           { currentMenuSelection == MENU.PRINCIPLES && <Principles/> }
@@ -163,18 +171,11 @@ export default class App extends React.Component {
           { currentMenuSelection == MENU.GET_INVOLVED && <GetInvolved/> }
         </ContentContainer>
 
-        <Path1 className="path path-1"/>
-        <Path2 className="path path-2"/>
-        <Path3 className="path path-3"/>
-        <Path4 className="path path-4"/>
-        <Path5 className="path path-5"/>
         <Path6 className="path path-6"/>
         <Path7 className="path path-7"/>
         <Path8 className="path path-8"/>
         <Path9 className="path path-9"/>
         <Path10 className="path path-10"/>      
-
-        <BlobsPartial id="blobs-partial" className="blobs blobs-partial" width={windowWidth + 30} style={{position: 'absolute', top: 0, left: 0, transform: 'translateX(700px) translateY(500px) scale(5)'}}/>
 
         <div className="description-menu">
           <div className="menu-item">208 Bowery, NY</div>
