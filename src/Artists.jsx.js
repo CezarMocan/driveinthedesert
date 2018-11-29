@@ -85,6 +85,14 @@ export default class Artists extends React.Component {
               <a href="https://www.instagram.com/tinabfoto/" target="__blank">instagram</a>&ensp;<a href="http://www.tinabfoto.com" target="__blank">website</a>
             </div>
 
+            <div className="participant-name">/guillaume vaslin/<span className="mono">illustration</span></div>
+            <div className="participant-text">
+            Guillaume is a creative director, entrepreneur and illustrator, who grew up within graphic novels and bandes-dessinées where he still finds most of his inspiration.
+            </div>
+            <div className="participant-links">
+              <a href="https://www.instagram.com/thisisguillaume/" target="__blank">instagram</a>&ensp;<a href="http://http://www.aboutguillaume.com/" target="__blank">website</a>
+            </div>
+
           </div>
         </div>
       </div>

@@ -11,12 +11,9 @@ export default class Artists extends React.Component {
 
   render() {
     return (
-      <div className="description-container">
-        <div className="description-text-container">
-          <div className="description-text-content">
-            <img src="https://i.imgur.com/49UWEmA.jpg" className="participant-image"/>
-          </div>
-        </div>
+      <div className="image-center-content">
+        <a href=""><img src="https://i.imgur.com/49UWEmA.jpg" className="participant-image"/></a>
+        <a href="https://rooted.nyc/"><img src="https://i.imgur.com/pmd6JK7.png" className="participant-image"/></a>
       </div>
     )
   }

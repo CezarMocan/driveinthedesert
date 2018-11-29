@@ -24,6 +24,14 @@ export default class Artists extends React.Component {
               <a href="https://www.instagram.com/imalinz/" target="__blank">instagram</a>&ensp;<a href="http://www.imalinz.com" target="__blank">website</a>
             </div>
 
+            <div className="participant-name">/virtu/<span className="mono">clothing</span></div>
+            <div className="participant-text">
+              Virtu envisions a world where unnecessary production of goods isn’t an excuse to damage the environment—a world where underpaying workers isn’t acceptable in profitable industries.
+            </div>
+            <div className="participant-links">
+              <a href="https://www.instagram.com/virturocks/" target="__blank">instagram</a>&ensp;<a href="http://www.virtu.rocks/" target="__blank">website</a>
+            </div>
+
             <div className="participant-name">/animamundi/<span className="mono">powders&elixirs</span></div>
             <div className="participant-text">
               Anima Mundi Apothecary is composed of the most pristine, and medicinal botanicals found in nature.
@@ -53,9 +61,24 @@ export default class Artists extends React.Component {
               Risa Nisimori studied proper wheel throwing in Japan, but her preferred method is Nerikomi, using different mixed clays and creating new and interesting patterns.
             </div>
             <div className="participant-links">
-              <a href="https://www.instagram.com/rizaasama/" target="__blank">instagram</a>&ensp;<a href="www.risanishimori.com" target="__blank">website</a>
+              <a href="https://www.instagram.com/rizaasama/" target="__blank">instagram</a>&ensp;<a href="http://www.risanishimori.com" target="__blank">website</a>
             </div>
 
+            <div className="participant-name">/wymann/<span className="mono">clothing</span></div>
+            <div className="participant-text">
+              Wymann is a clothing boutique based in Rio, Brazil that produces sustainable clothing made to empower and support eacg woman express their own personalities.
+            </div>
+            <div className="participant-links">
+              <a href="https://www.instagram.com/wymann_rio/" target="__blank">instagram</a>&ensp;<a href="http://www.wymann.com.br/#avery" target="__blank">website</a>
+            </div>
+
+            <div className="participant-name">/mozaique/<span className="mono">carpets</span></div>
+            <div className="participant-text">
+              A boutique social business leveraging high-end design, traditional craft techniques, blockchain technology and bespoke experiences to preserve heritage artisanal work and cultural identity.
+            </div>
+            <div className="participant-links">
+              <a href="https://www.instagram.com/mozaiqueglobal/" target="__blank">instagram</a>&ensp;<a href="http://www.mozaique.co" target="__blank">website</a>
+            </div>
           </div>
         </div>
       </div>
